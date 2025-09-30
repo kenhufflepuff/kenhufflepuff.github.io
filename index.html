@@ -1,31 +1,44 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
+    <head class="bigLine">
         <title>Ken's Funny Website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
         <style>
+            
             body {
                 background-color: #ADD8E6; /* Light Blue */
+                animation: mymove 10s infinite;
                 font-weight: 400;
                 font-style: normal;
+                font-family: 'Work Sans','Helvetica', 'Arial', sans-serif;
             }
-            p {
-                font-family: 'Helvetica', 'Arial', sans-serif;
+            .smallLine {
+            line-height: 0.75;
             }
-            h3{
-                font-family: 'Times New Roman', Times, serif;
+            .bigLine {
+            line-height: 2;
             }
-            head{
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            h2 {
+            	font-family: 'Helvetica', 'Times New Roman','Arial', sans-serif;
+                font-weight: 1000;
             }
             a {
                 color: black;
-                font-style: italic;
+                font-style: normal;
+            }
+            .indent {
+              text-indent: 25px;
+			}
+            @keyframes mymove {
+              0% {background-color: rgb(186, 243, 195);}
+              50% {background-color: rgb(164, 164, 235);}
+              100% {background-color: rgb(186, 243, 195);}
             }
         </style>
         <h2>Ken's Website</h2>
     </head>
-    <body>
-        <a href="https://kenhufflepuff.github.io/frenchblog/" target="_blank">French Blog</a>
+    <body class="smallLine">
+        <h3>French blog project: <a href="https://kenhufflepuff.github.io/frenchblog/">French Blog</a></h3>
+        <p class="indent">This is a project for my French class. Not much there.</p>
     </body>
 </html>
-
